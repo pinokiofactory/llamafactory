@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
   version: "1.5",
   title: "LlamaFactory",
-  description: "",
+  description: "Unify Efficient Fine-Tuning of 100+ LLMs https://github.com/hiyouga/LLaMA-Factory",
   icon: "icon.jpeg",
   menu: async (kernel) => {
     let installing = await kernel.running(__dirname, "install.js")
