@@ -5,7 +5,7 @@ module.exports = {
       method: "shell.run",
       params: {
         message: [
-          "git clone https://github.com/betapeanut/LLaMA-Factory app",
+          "git clone https://github.com/hiyouga/LLaMA-Factory app",
         ]
       }
     },
@@ -28,8 +28,8 @@ module.exports = {
         venv: "env",                // Edit this to customize the venv folder path
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
-          "pip install gradio devicetorch tiktoken",
-          "pip install -e .[metrics]",
+          "uv pip install devicetorch tiktoken",
+          "uv pip install -e .[metrics]",
         ]
       }
     },
@@ -40,7 +40,7 @@ module.exports = {
         venv: "env",                // Edit this to customize the venv folder path
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
-          "pip install https://github.com/jllllll/bitsandbytes-windows-webui/releases/download/wheels/bitsandbytes-0.41.2.post2-py3-none-win_amd64.whl"
+          "uv pip install https://github.com/jllllll/bitsandbytes-windows-webui/releases/download/wheels/bitsandbytes-0.41.2.post2-py3-none-win_amd64.whl"
         ]
       }
     },
@@ -51,7 +51,7 @@ module.exports = {
         venv: "env",                // Edit this to customize the venv folder path
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
-          "pip install https://github.com/jllllll/bitsandbytes-windows-webui/releases/download/wheels/bitsandbytes-0.39.0-py3-none-linux_x86_64.whl"
+          "uv pip install https://github.com/jllllll/bitsandbytes-windows-webui/releases/download/wheels/bitsandbytes-0.39.0-py3-none-linux_x86_64.whl"
         ]
       }
     },
@@ -61,12 +61,6 @@ module.exports = {
     //    params: {
     //      venv: "app/env"
     //    }
-    //  },
-    {
-      method: "notify",
-      params: {
-        html: "Click the 'start' tab to get started!"
-      }
-    }
+    //  }
   ]
 }
